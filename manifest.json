@@ -1,6 +1,6 @@
 {
    "commerceSuiteVersion": "6.7.0.1",
-   "troubleshootingModeEnabled":"true",
+   "troubleshootingModeEnabled":true,
    "extensions": [
 "modeltacceleratorservices",
 "mcc",
