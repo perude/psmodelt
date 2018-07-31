@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "6.7.0.3",
+   "commerceSuiteVersion": "6.7.0.2",
    "troubleshootingModeEnabled":true,
    "extensions": [
    	   "mcc",
@@ -52,7 +52,6 @@
        "acceleratorservices",
 	   "commerceservices",
 	   "springintegrationlibs",
-	   "commerceservices",
 	   "azurecloud",
 	   "cloudcommons",
 	   "cloudhotfolder",
