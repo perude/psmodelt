@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "6.7.0.1",
+   "commerceSuiteVersion": "6.7.0.3",
    "troubleshootingModeEnabled":true,
    "extensions": [
    	   "mcc",
@@ -49,7 +49,14 @@
        "customsiteinitialdata",
        "customsitestorefront",
        "personalizationsearchsamplesaddon",
-       "optcustomerfacade"
+       "acceleratorservices",
+	   "commerceservices",
+	   "springintegrationlibs",
+	   "commerceservices",
+	   "azurecloud",
+	   "cloudcommons",
+	   "cloudhotfolder",
+	   "azurecloudhotfolder"
    ],
    "storefrontAddons" : [
         {
@@ -195,7 +202,7 @@
             "properties": [
                 {
                     "key": "cluster.node.groups",
-                    "value": "backgroundProcessing"
+                    "value": "backgroundProcessing,integration,yHotfolderCandidate"
                 },
                 {
                     "key": "task.workers.max",
@@ -216,7 +223,7 @@
                 {
                     "key": "processengine.process.canjoinpreviousnode.default",
                     "value": "true"
-                }             
+                }         
             ],
             "webapps": [
                 {
