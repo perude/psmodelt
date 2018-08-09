@@ -27,11 +27,13 @@
        "promotionenginesamplesaddon",
        "cmswebservices",
        "smarteditwebservices",
+       "smartedit",
        "cmssmarteditwebservices",
        "permissionswebservices",
        "smarteditaddon",
        "cmssmartedit",
        "cmsbackoffice",
+       "cmsoccaddon",
        "cmsmulticountrycockpit",
        "multicountrysampledataaddon",       
        "textfieldconfiguratortemplatebackoffice",
@@ -49,7 +51,31 @@
        "customsiteinitialdata",
        "customsitestorefront",
        "personalizationsearchsamplesaddon",
-       "optcustomerfacade"
+       "optcustomerfacade",
+       "previewpersonalizationweb",
+       "personalizationcmsweb",
+       "personalizationsmartedit",
+       "personalizationpromotionssmartedit",
+       "personalizationsampledataaddon",
+       "personalizationpromotions",
+       "personalizationpromotionsweb",
+       "personalizationservicesbackoffice",
+       "personalizationpromotionsbackoffice",
+       "personalizationcmsbackoffice",
+       "personalizationsearchbackoffice",
+       "personalizationsearchsmartedit",
+       "personalizationsearchweb",
+       "personalizationsearchsamplesaddon",
+       "assistedserviceatddtests",
+       "promotionengineatddtests",
+       "textfieldconfiguratortemplateatddtests",
+       "modeltacceleratorservices",
+       "personalizationintegration",
+       "personalizationyprofile",
+       "profileservices",
+       "yaasconfigurationbackoffice",
+       "profiletagaddon"
+
    ],
    "storefrontAddons" : [
         {
@@ -116,7 +142,17 @@
             "addon": "assistedservicestorefront",
             "storefront": "customsitestorefront",
             "template": "yacceleratorstorefront"
-        }     
+        },
+        {
+            "addon": "profiletagaddon",
+            "storefront": "customsitestorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "cmsoccaddon",
+            "storefront": "ycommercewebservices",
+            "template": "ycommercewebservices"
+        }    
         
     ],
    "properties": [
@@ -144,9 +180,13 @@
             "persona": "production"
         },
         {
-     	 "key":"hac.webroot",
-     	 "value":"/hac"
-    	}
+     	      "key":"hac.webroot",
+     	      "value":"/hac"
+    	  },
+        {
+            "key": "multicountrysampledataaddon.import.active",
+            "value": "false"
+        }
     ],
    "aspects": [
          {
@@ -170,9 +210,57 @@
         {
             "name": "accstorefront",
             "properties": [
-               {
+                {
                     "key": "regioncache.queryregion.evictionpolicy",
                     "value": "LRU"
+                },
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
+                },
+                {
+                    "key":"website.electronics.http",
+                    "value":"http://electronics.csemea-csemeaprod-p4-public.model-t.myhybris.cloud" 
+                                    },
+                {
+                    "key":"website.electronics.https",
+                    "value":"https://electronics.csemea-csemeaprod-p4-public.model-t.myhybris.cloud" 
+                },
+                {
+                    "key":"website.apparel-uk.http",
+                    "value":"http://apparel-uk.csemea-csemeaprod-p4-public.model-t.myhybris.cloud"
+                },
+                {
+                    "key":"website.apparel-uk.https",
+                    "value":"https://apparel-uk.csemea-csemeaprod-p4-public.model-t.myhybris.cloud" 
+                },
+                {
+                    "key":"website.apparel-de.http",
+                    "value":"http://apparel-de.csemea-csemeaprod-p4-public.model-t.myhybris.cloud" 
+                },
+                {
+                    "key":"website.apparel-de.https",
+                    "value":"https://apparel-de.csemea-csemeaprod-p4-public.model-t.myhybris.cloud"
+                },
+                {
+                    "key":"xss.filter.header.X-Frame-Options",
+                    "value":""
                 }
             ],
             "webapps": [
@@ -187,6 +275,66 @@
                 {
                     "name": "customsitestorefront",
                     "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                },
+                {
+                    "name": "ycommercewebservices",
+                    "contextPath": "/rest"
+                },
+                {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
+                },
+                {
+                    "name": "cmssmartedit",
+                    "contextPath": "/cmssmartedit"
+                },
+                {
+                    "name": "smarteditwebservices",
+                    "contextPath": "/smarteditwebservices"
+                },
+                {
+                    "name": "cmssmarteditwebservices",
+                    "contextPath": "/cmssmarteditwebservices"
+                },
+                {
+                    "name": "personalizationsmartedit",
+                    "contextPath": "/personalizationsmartedit"
+                },
+                {
+                    "name": "personalizationpromotionssmartedit",
+                    "contextPath": "/personalizationpromotionssmartedit"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "cmswebservices",
+                    "contextPath": "/cmswebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
+                },
+                {
+                    "name": "previewwebservices",
+                    "contextPath": "/previewwebservices"
+                },
+                {
+                    "name": "personalizationwebservices",
+                    "contextPath": "/personalizationwebservices"
+                },
+                {
+                    "name": "personalizationsearchsmartedit",
+                    "contextPath": "/personalizationsearchsmartedit"
+                },
+                {
+                    "name": "adaptivesearchwebservices",
+                    "contextPath": "/adaptivesearchwebservices"
                 }
             ]
         },
