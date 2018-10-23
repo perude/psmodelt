@@ -145,12 +145,7 @@
         {
      	 "key":"hac.webroot",
      	 "value":"/hac"
-    	},
-    	{    
-    		"key": "log4j2.appender.console.layout.pattern",
-    		"value": "{\"timeMillis\":\"%d{UNIX_MILLIS}\",\"appTime\":\"%d{ISO8601}{UTC}Z\",\"thread\":\"%t\",\"level\":\"%p\",\"loggerName\":\"%c\",\"remoteAddr\":\"%X{RemoteAddr}\",\"tenant\":\"%X{Tenant}\",\"cronJob\":\"%X{CronJob}[%c{1}]\",\"message\":\"%m%xThrowable{100,separator(|)}\"}%n"
-		}
-
+    	}
     ],
    "aspects": [
          {
