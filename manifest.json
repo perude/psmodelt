@@ -118,6 +118,11 @@
         }     
         
     ],
+    "useConfig": {
+		"solr": {
+		"location": "/config/solr"
+				}
+	},
    "properties": [
         {
             "key": "test.property.1",
