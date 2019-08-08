@@ -194,9 +194,57 @@
         {
             "name": "accstorefront",
             "properties": [
-               {
+                {
                     "key": "regioncache.queryregion.evictionpolicy",
                     "value": "LRU"
+                },
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
+                },
+                {
+                    "key":"website.electronics.http",
+                    "value":"http://electronics.csemea-csemeaprod-p5-public.model-t.cc.commerce.ondemand.com" 
+                                    },
+                {
+                    "key":"website.electronics.https",
+                    "value":"https://electronics.csemea-csemeaprod-p5-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-uk.http",
+                    "value":"http://apparel-uk.csemea-csemeaprod-p5-public.model-t.cc.commerce.ondemand.com"
+                },
+                {
+                    "key":"website.apparel-uk.https",
+                    "value":"https://apparel-uk.csemea-csemeaprod-p5-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-de.http",
+                    "value":"http://apparel-de.csemea-csemeaprod-p5-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-de.https",
+                    "value":"https://apparel-de.csemea-csemeaprod-p5-public.model-t.cc.commerce.ondemand.com"
+                },
+                {
+                    "key":"xss.filter.header.X-Frame-Options",
+                    "value":""
                 }
             ],
             "webapps": [
@@ -211,6 +259,66 @@
                 {
                     "name": "customsitestorefront",
                     "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                },
+                {
+                    "name": "ycommercewebservices",
+                    "contextPath": "/rest"
+                },
+                {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
+                },
+                {
+                    "name": "cmssmartedit",
+                    "contextPath": "/cmssmartedit"
+                },
+                {
+                    "name": "smarteditwebservices",
+                    "contextPath": "/smarteditwebservices"
+                },
+                {
+                    "name": "cmssmarteditwebservices",
+                    "contextPath": "/cmssmarteditwebservices"
+                },
+                {
+                    "name": "personalizationsmartedit",
+                    "contextPath": "/personalizationsmartedit"
+                },
+                {
+                    "name": "personalizationpromotionssmartedit",
+                    "contextPath": "/personalizationpromotionssmartedit"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "cmswebservices",
+                    "contextPath": "/cmswebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
+                },
+                {
+                    "name": "previewwebservices",
+                    "contextPath": "/previewwebservices"
+                },
+                {
+                    "name": "personalizationwebservices",
+                    "contextPath": "/personalizationwebservices"
+                },
+                {
+                    "name": "personalizationsearchsmartedit",
+                    "contextPath": "/personalizationsearchsmartedit"
+                },
+                {
+                    "name": "adaptivesearchwebservices",
+                    "contextPath": "/adaptivesearchwebservices"
                 }
             ]
         },
