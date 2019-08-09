@@ -97,11 +97,6 @@
             "template": "yacceleratorstorefront"
         },
         {
-            "addon": "multicountrysampledataaddon",
-            "storefront": "custstorefrontstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
             "addon": "textfieldconfiguratortemplateaddon",
             "storefront": "custstorefrontstorefront",
             "template": "yacceleratorstorefront"
