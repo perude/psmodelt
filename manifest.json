@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "19.05",
+   "commerceSuiteVersion": "1905",
    "troubleshootingModeEnabled":true,
    "extensions": [
        "adaptivesearchsolr",
