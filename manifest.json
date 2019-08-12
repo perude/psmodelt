@@ -122,11 +122,6 @@
             "template": "yacceleratorstorefront"
         },
         {
-            "addon": "cmsoccaddon",
-            "storefront": "custstorefrontstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
             "addon": "personalizationsampledataaddon",
             "storefront": "custstorefrontstorefront",
             "template": "yacceleratorstorefront"
