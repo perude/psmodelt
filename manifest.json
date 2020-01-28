@@ -60,6 +60,12 @@
        "custstorefrontstorefront"
 
    ],
+   "useConfig": {
+        "properties": [
+            {
+                "location": "/config/local.properties"
+            },]
+    }
    "storefrontAddons" : [
         {
             "addon": "adaptivesearchsamplesaddon",
