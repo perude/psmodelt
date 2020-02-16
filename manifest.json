@@ -57,8 +57,8 @@
        "custstorefronttest",
        "custstorefrontinitialdata",
        "custstorefrontbackoffice",
-       "custstorefrontstorefront"
-
+       "custstorefrontstorefront",
+       "barcodetest"
    ],
    "useConfig": {
         "properties": [
